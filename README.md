@@ -3,7 +3,7 @@ open-recursor-check
 
 Tools to check network ranges for open recursive DNS servers
 An example of the scripts' output can be seen at 
-http://vixie.funkfeuer.at/
+http://ormon.funkfeuer.at/
 
 
 Installation
