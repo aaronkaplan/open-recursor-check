@@ -1,0 +1,16 @@
+set terminal png large font "Vera,10" enhanced
+set xdata time
+set timefmt '%Y%m%d-%H:%M'
+set xtic rotate by -45 scale .5 font ",8"
+set output 'stats.png'
+plot 'stats.txt' using 1:2 title "# of open recursors"  with lines
+
+
+#set xdata time
+#plot 'stats.txt' using 1:2 title "# of open recursors"  with boxes
+#set output 'stats.png'
+#plot 'stats.txt' using 1:2 title "# of open recursors"  with boxes
+#plot 'stats.txt' using 1:2 title "# of open recursors"  with lines
+#set output 'stats.png'
+
+
