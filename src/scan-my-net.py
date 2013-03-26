@@ -25,8 +25,7 @@ import json
 import config
 
 
-ranges=["193.238.156.0/22","78.41.112.0/21"]
-#ranges=["193.238.156.0/25"]
+ranges=["192.168.0.0/24","10.0.0.0/16"]
 #tests=[Openrecursor(),DNSChanger(),SSHDefault()]
 tests=[Openrecursor()]
 s=Scanner(ranges)
