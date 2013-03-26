@@ -62,7 +62,6 @@ Permanent installation
 ----------------------
 Add scan-my-net.py to your crontab:
 
-# m h  dom mon dow   command
 0  3  *   *   *     ( /home/akaplan/openrecursors/scanning/doit.sh  > /dev/null )
 
 (change the paths according to your installation)
