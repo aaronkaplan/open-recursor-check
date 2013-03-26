@@ -24,18 +24,18 @@ Preparations
 
 First create the RRD database:
 
-  $ ./init.sh
+	$ ./init.sh
 
 
 Configuration 
 ------------
 Then specify the IP ranges which should be scanned:
 
-  $ vi  scan-my-net.py
+	$ vi  scan-my-net.py
 
 Example:
 
-   ranges=["193.238.156.0/22","78.41.112.0/21"]
+	ranges=["193.238.156.0/22","78.41.112.0/21"]
 
 Change the ranges to your needs
 
