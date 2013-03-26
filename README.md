@@ -35,7 +35,7 @@ Then specify the IP ranges which should be scanned:
 
 Example:
 
-	ranges=["193.238.156.0/22","78.41.112.0/21"]
+	ranges=["192.168.0.0/24","10.0.0.0/16"]
 
 Change the ranges to your needs
 
