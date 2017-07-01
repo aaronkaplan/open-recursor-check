@@ -1,7 +1,7 @@
 open-recursor-check
 ===================
 
-Tools to check network ranges for open recursive DNS servers
+Tools to check network ranges for open recursive DNS servers.
 An example of the scripts' output can be seen at 
 http://ormon.funkfeuer.at/
 
@@ -12,11 +12,11 @@ Installation
 Prerequisites
 -------------
 
-python 2.6 or higher
-python-json
-rrdtool
+- python 2.6 or higher
+- python-json
+- rrdtool
 
-These scripts were tested on Debian squeeze (6.0.7)
+These scripts were tested on Debian squeeze (6.0.7).
 
 
 Preparations
@@ -37,7 +37,7 @@ Example:
 
 	ranges=["192.168.0.0/24","10.0.0.0/16"]
 
-Change the ranges to your needs
+Change the ranges to your needs.
 
 
 Testing 
@@ -57,9 +57,9 @@ This should give you an output similar to:
 	test:DNS Recursor, ip: 193.238.156.5, result:False
 	test:DNS Recursor, ip: 193.238.156.6, result:False
 
-Terminate the scan with Ctrl-C or Ctrl-Z and kill %1
+Terminate the scan with `Ctrl-C` or `Ctrl-Z` and `kill %1`.
 
-If you see some error messages, there is something wrong with your python setup
+If you see some error messages, there is something wrong with your python setup.
 
 
 Permanent installation
@@ -74,16 +74,16 @@ Add scan-my-net.py to your crontab:
 Test the graphs
 ---------------
 init.sh can generate the graphs based on the RRD data.
-symlink the graphs to your webservers' DocumentRoot. Now you can see them online :)
+Symlink the graphs to your webservers' DocumentRoot. Now you can see them online.
 
 
 Open issues and further research
 ================================
 
 1) Currently, the init.sh file re-creates the .rrd database completely and
-   re-plots every RRD graph . This is inefficient.
+   re-plots every RRD graph. This is inefficient.
 
-2) scanning the network should be done in parallel. Look at 0-mq and related 
+2) Scanning the network should be done in parallel. Look at [zmq](http://www.zeromq.org/) and related 
    technologies for parallelizing this.
 
 
